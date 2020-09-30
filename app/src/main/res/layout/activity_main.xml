@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lastOptionTextBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="44dp"
+        android:background="@android:color/holo_blue_bright"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="10dp"
+        android:text="Select A box you want"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ordinaryBox"
+        app:layout_constraintStart_toStartOf="@+id/specialBox"
+        app:layout_constraintTop_toBottomOf="@+id/specialBox" />
+
+    <ImageView
+        android:id="@+id/specialBox"
+        android:layout_width="100dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/gamebox"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startGameBtn" />
+
+    <ImageView
+        android:id="@+id/ordinaryBox"
+        android:layout_width="100dp"
+        android:layout_height="91dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/special"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/lastOptionTextBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/specialBox"
+        app:layout_constraintTop_toTopOf="@+id/specialBox"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/Box6"
+        android:layout_width="100dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/gamebox"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/Box1"
+        app:layout_constraintTop_toBottomOf="@+id/Box4" />
+
+    <ImageView
+        android:id="@+id/Box7"
+        android:layout_width="100dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/gamebox"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/Box6"
+        app:layout_constraintTop_toTopOf="@+id/Box6" />
+
+    <ImageView
+        android:id="@+id/Box8"
+        android:layout_width="100dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/gamebox"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/Box7"
+        app:layout_constraintTop_toTopOf="@+id/Box7" />
+
+    <ImageView
+        android:id="@+id/Box1"
+        android:layout_width="100dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/gamebox"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/instructionTv"
+        app:layout_constraintTop_toBottomOf="@+id/instructionTv" />
+
+    <ImageView
+        android:id="@+id/Box2"
+        android:layout_width="100dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/gamebox"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/Box1"
+        app:layout_constraintTop_toTopOf="@+id/Box1" />
+
+    <ImageView
+        android:id="@+id/Box3"
+        android:layout_width="100dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/gamebox"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toEndOf="@+id/Box2"
+        app:layout_constraintTop_toTopOf="@+id/Box2" />
+
+    <ImageView
+        android:id="@+id/Box4"
+        android:layout_width="100dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/gamebox"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/Box1"
+        app:layout_constraintTop_toBottomOf="@+id/Box1" />
+
+    <ImageView
+        android:id="@+id/Box5"
+        android:layout_width="100dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/gamebox"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/Box4"
+        app:layout_constraintTop_toTopOf="@+id/Box4" />
+
+    <Button
+        android:id="@+id/startGameBtn"
+        android:layout_width="356dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Start Game"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Box7" />
+
+    <TextView
+        android:id="@+id/instructionTv"
+        android:layout_width="352dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_blue_bright"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="10dp"
+        android:text="Click ANY box to remove"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#F6F0F0"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
